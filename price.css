@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end*/
+
+/* css base*/
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 12px; 
+}
+
+/* pricing plan detail*/
+
+.pricing body{
+    position: relative;
+}
+
+.banner-img{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.gray-img{
+    position: absolute;
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    width: 100%;
+    height: 470px;
+    z-index: -2;
+}
+
+
+/*開頭*/
+
+.banner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px 80px;
+} 
+
+.banner-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.logo{
+    width: 220px;
+    height: 40px;
+}
+
+.banner-nav>a {
+    display: block;
+    padding: 8px 32px;
+    color: #fff;
+    background: #FF5D50;
+    border-radius: 50px;
+}
+
+.banner-nav>a:hover {
+    color: #FF5D50;
+    background: #fff;
+}
+
+.banner-description{
+    margin-bottom: 180px;  
+}
+
+
+.banner-txt h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 92px 32px 16px 0;
+}
+
+/*方案*/
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.plan-nav h2 {
+    text-align: center;
+    font-weight: bold; 
+    font-size: 32px;
+    margin: 100px 0 48px 0;
+}
+
+.plan-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.plan-btn li {
+    margin: 0 16px 16px 16px;
+}
+
+.plan-btn a {
+    display: inline-block;
+    color:#56C4C5;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 32px;
+    background-color: #fff;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+
+.plan-btn a:hover {
+    color:#fff;
+    background-color: #56C4C5;
+}
+
+
+.plan-comparison {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.basic-plan {
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-right: 21px;
+}
+
+.plan-comparison h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0 16px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.plan-comparison p {
+    text-align: center;
+    color: #221E1F;
+    padding-top: 48px;
+    margin-bottom: 32px;
+}
+
+.plan-in-detial {
+    text-align: center;
+}
+
+.plan-in-detial a {
+    display: inline-block;
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 32px;
+    background-color: #56C4C5;
+    border-radius: 27px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.plan-in-detial a:hover {
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    background-color: white;
+}
+
+
+.cost {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 29px;
+    margin-right: 23px;
+}
+
+
+.cost li {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 20px 25px;
+}
+
+
+.cost h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.cost li span {
+    font-size: 32px;
+}
+
+
+.cost .subscription {
+    font-size:32px;
+    color: #56C4C5;
+}
+
+.cost .equal {
+    background-color: white;
+    align-self: center;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+
+.plan-features {
+    padding-top: 32px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+
+.plan-features li {
+    padding-bottom: 20px;
+}
+
+.plan-features span {
+    padding-left: 12px;
+}
+
+.standard-plan {
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+
+/*常見問題*/
+
+.faq {
+    max-width: 904px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+
+.faq li {
+    padding: 16px 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.faq-question button {
+    background-color: white;
+    border: none;
+}
+
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.faq-ans {
+    padding: 0 32px 24px 32px;
+    color:#747474;
+    line-height: 2;
+}
+
+
+.footer p {
+    background-color: #F5F5F5;
+    padding: 16px 0;
+    text-align: center;
+}
+
+
+@media(max-width:992px) {
+    
+    .banner-txt h1 {
+        font-size: 36px;
+        margin: 230px 32px 16px 0;
+    }
+
+    .banner-txt p {
+        font-size: 14px;
+    }
+    .plan-nav h2 {
+        margin: 140px 0 48px 0;
+    }
+    .plan-comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+    .basic-plan {
+        width: 80%;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+    .standard-plan {
+        width: 80%;
+    }
+    .cost {
+        justify-content: space-evenly;
+    }
+    .plan-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .banner-txt h1 {
+        margin: 250px 32px 16px 0;
+    }
+
+}
+
+
+@media(max-width:576px) {
+    .banner {
+        padding: 0;
+    }
+
+
+    .banner-nav {
+        padding: 16px 20px;
+        border-bottom: 2px solid #FFD153;
+    }
+
+    .logo {
+        width: 125px;
+        height: 24px;
+    }
+
+    .banner-description {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 361px;
+    }
+    .banner-txt h1 {
+        font-size: 32px;
+        margin: 48px 0 16px 0;
+    }
+    .banner-img1 {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+        background-position: left 72px;
+        background-size: contain;
+
+    }
+
+
+    .banner-img {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg');
+        background-repeat: no-repeat;
+        background-position: 0px 72px;
+        background-size: contain;
+        width: 80%;
+    }
+
+
+
+    .gray-img {
+        position:absolute;
+        top: 70px;
+        border-radius: 0 0 0 150px;
+        max-height: 495px;     
+    }
+
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+    }
+    
+
+    .plan-nav h2 {
+        font-size: 28px;
+        margin: 0 0 24px 0;
+        padding-top: 60px;
+    }
+    .plan-btn {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .plan-comparison{
+        margin-bottom: 60px;
+    }
+
+
+    .basic-plan {
+        width: 100%;    
+    }
+    .plan-in-detial {
+        padding: 32px 16px;
+    }
+  
+    .standard-plan{
+        width: 100%;
+    }
+    .cost li {
+        padding: 16px 24px;
+    }
+
+    .cost .subscription {
+        font-size: 28px;
+    }
+
+    .plan-features {
+        padding: 24px 0 24px 0;
+        margin-left: 30px;
+    }
+
+    .plan-features li {
+        padding-bottom: 16px;
+    }
+    .plan-features span {
+        font-size: 14px;
+    }
+
+
+    .faq {
+        margin-bottom: 76px;
+    }
+
+    .faq h2 {
+        margin-bottom: 32px;
+    }
+
+
+
+    .faq-question {
+        font-size: 16px; 
+    }
+
+
+    .faq-question h3 {
+        text-align: left;
+        padding-left: 16px;
+    }
+
+    .minus {
+        width: 16px;
+        height: 16px;
+    }
+    .faq-ans {
+        padding: 0px 16px 24px 16px;
+    }
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
